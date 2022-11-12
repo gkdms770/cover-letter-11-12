@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>홍하은 자기소개서</title>
+	<link rel="stylesheet" href="css/index.css">
+
+	<!-- 제이쿼리 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+	<script defer src="js/index.js"></script>
+
+	<!-- 스와이퍼 불러오기 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	<!-- 폰트어썸 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- gsap 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+
+	<style>
+		@font-face {
+			font-family: 'GmarketSansMedium';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.text_box .title {
+			font-family: 'GmarketSansMedium';
+		}
+
+
+		@font-face {
+			font-family: 'Pretendard-Regular';
+			src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		#gnb>li>a::after {
+			font-family: 'Pretendard-Regular';
+		}
+
+		@font-face {
+			font-family: 'SDSamliphopangche_Outline';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		#gnb>li>a {
+			font-family: 'SDSamliphopangche_Outline';
+		}
+
+		@font-face {
+			font-family: 'Tenada';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.section-1__main-text .title {
+			font-family: 'Tenada';
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- 사이드 메뉴 -->
+	<aside class="gnb_wrap">
+		<ul id="gnb">
+			<li><a href="#info_content" data-menu="프로필">PROFLE</a></li>
+			<li><a href="#test" data-menu="포트폴리오">PORTFOLIO</a></li>
+			<li><a href="#about" data-menu="어바웃">ABOUT</a></li>
+		</ul>
+	</aside>
+	<!-- 사이드 끝 -->
+
+	<!-- info_content 구현 시작-->
+	<section id="info_content" class="section section-1">
+		<div class="section-1__main-text">
+			<h1 class="title active-on-visible" data-active-on-visible-delay="500">
+				2022 WEB-PUBLISHER
+			</h1>
+		</div>
+		<div class="section-1__text">
+			<span><span>H</span></span>
+			<span><span>e</span></span>
+			<span><span>l</span></span>
+			<span><span>l</span></span>
+			<span><span>o</span></span>
+			<span><span>!</span></span>
+			<span><span>♡</span></span>
+
+		</div>
+		<div class="info">
+			<div class="fic_box">
+				<img src="img/KakaoTalk_20221020_191033095.jpg" alt="">
+				<div class="txt_box">
+					<p>신입 웹퍼블리셔 <span>홍하은</span>이라고합니다.<br>배우는걸 마다하지않고 더 열심히하기위해<br>연구하고 공부합니다<br><br>회사 내
+						<span>최고의 팀원</span>
+						이되도록<br>노력하겠습니다.
+					</p>
+					<p>#긍정적#밝음#에너지</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- info_content 구현 끝 -->
+
+	<section id="test">
+		<div class="inner">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/haeun popol-1.png" alt="">
+						<h1 class="title">마리끌레르 리뉴얼 페이지</h1>
+						<p class="test_text">처음으로 제작한 <span>html과 css</span>만을 이용해 원페이지로 만든<br>반응형 페이지입니다.</p>
+						<button><a href=" https://gkdms770.github.io/haeun-Reaction-type/">main</a>
+					</div></button>
+					<div class="swiper-slide"><img src="img/haeun popol-2.png" alt="">
+						<h1 class="title">달콤커피 리뉴얼 페이지</h1>
+						<p class="test_text"><span>html과 css</span>만을 이용해서 메인페이지와 서브페이지를 <br>만들었습니다.<span> (반응형x)</span></p>
+						<button><a href="https://gkdms770.github.io/dalkom_2022_10_27/">main</a></button>
+						<button><a href="https://gkdms770.github.io/dalkom_2022_10_27/sub.html">sub</a></button>
+					</div>
+					
+					<div class="swiper-slide"><img src="img/haeun popol-3.png" alt="">
+						<h1 class="title">직접 디자인한 반응형페이지</h1>
+						<p class="test_text"><span> html, css, js</span>로 직접 디자인한 반응형페이지입니다.</p>
+						<button><a href=" https://gkdms770.github.io/haeun-shopping-mall/">main</a></button>
+					</div>
+					<div class="swiper-slide"><img src="img/haeun popol-4.jpg" alt="">
+						<h1 class="title">직접 디자인한 반응형페이지2</h1>
+						<p class="test_text"><span> html, css, js</span> 로 직접 디자인한 반응형페이지입니다.</p>
+						<button><a href=" https://gkdms770.github.io/haeun_project/">main</a></button>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="about" class="section section-2">
+		<div class="info_box">
+			<div class="info">
+				<div class="section-2__text">
+					<div class="section-2__main-text">
+						<div>THANK YOU FOR PLEASE</div>
+						<div>CONTACT ME</div>
+					</div>
+					<div class="txt_box">
+						<p>
+							<span><i class="fa-regular fa-circle-user"></i></span>
+							<span>NAME</span>
+							<span>홍하은</span>
+						</p>
+						<p>
+							<span><i class="fa-solid fa-mobile-screen-button"></i></span>
+							<span>PHONE</span>
+							<span>010-9917-5631</span>
+						</p>
+						<p>
+							<span><i class="fa-regular fa-paper-plane"></i></span>
+							<span>EMAIL</span>
+							<span>gkdms770@naver.com</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<p>*본 페이지는 PC기준 사이즈로 제작 되었습니다.</p>
+			</footer>
+		</div>
+		</div>
+	</section>
+</body>
+
+</html>
