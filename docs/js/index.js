@@ -1,3 +1,41 @@
+gsap.registerPlugin(ScrollTrigger);
+
+// Setup
+const scroller = document.querySelector(".wrap");
+
+const bodyScrollBar = Scrollbar.init(scroller, {
+  damping: 0.1,
+  delegateTo: document,
+  // 스크롤바 평소에는 감춰줌
+  // alwaysShowTracks: true,
+});
+
+ScrollTrigger.scrollerProxy(".wrap", {
+  scrollTop(value) {
+    if (arguments.length) {
+      bodyScrollBar.scrollTop = value;
+    }
+    return bodyScrollBar.scrollTop;
+  },
+});
+
+// 새로 추가한 부분(이게 있어야 anchor link 사용 가능)
+$(".gnb_wrap .anchor").on("click", function (e) {
+  e.preventDefault();
+
+  const target = $(this).attr("href");
+
+  if ($(target).hasClass("pinned")) {
+    bodyScrollBar.scrollTo(0, $(target).parent().position().top, 1000);
+  } else {
+    bodyScrollBar.scrollTo(0, $(target).position().top, 1000);
+  }
+});
+
+bodyScrollBar.addListener(ScrollTrigger.update);
+
+ScrollTrigger.defaults({ scroller: scroller });
+
 /* 발견되면 활성화시키는 라이브러리 시작 */
 function ActiveOnVisible__init() {
   $(".active-on-visible").each(function (index, node) {
@@ -117,19 +155,19 @@ $(function () {
 /* 발견되면 활성화시키는 라이브러리 끝 */
 
 // gsap
-let tl = gsap.timeline({
+let tl1 = gsap.timeline({
   repeat: -1,
   repeatDelay: 1,
 });
 
-tl.from(".section-1__text > span > span", {
+tl1.from(".section-1__text > span > span", {
   opacity: 0,
   // x:100,
   duration: 1,
   stagger: 0.5,
 });
 
-tl.to(
+tl1.to(
   ".section-1__text > span > span",
   {
     opacity: 0,
